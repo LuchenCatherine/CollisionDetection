@@ -1,0 +1,1 @@
+/bin/c++ -O3 -DNDEBUG CMakeFiles/collision_detection.dir/collision_detection_kidney.cpp.o -o bin/collision_detection  -Wl,-rpath,/usr/lib/gcc/x86_64-linux-gnu/8 libgeometry.a /usr/lib/x86_64-linux-gnu/libmpfr.so /usr/lib/x86_64-linux-gnu/libgmp.so /usr/lib/gcc/x86_64-linux-gnu/8/libgomp.so /usr/lib/x86_64-linux-gnu/libpthread.so 
