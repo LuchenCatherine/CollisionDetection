@@ -57,10 +57,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/catherine/Research/CollisionDetection/AABBTest
+CMAKE_SOURCE_DIR = /home/catherine/Research/CollisionDetection/collision_detection_kidney
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/catherine/Research/CollisionDetection/AABBTest/build
+CMAKE_BINARY_DIR = /home/catherine/Research/CollisionDetection/collision_detection_kidney/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/catherine/Research/CollisionDetection/AABBTest/build/CMakeFiles /home/catherine/Research/CollisionDetection/AABBTest/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/catherine/Research/CollisionDetection/collision_detection_kidney/build/CMakeFiles /home/catherine/Research/CollisionDetection/collision_detection_kidney/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/catherine/Research/CollisionDetection/AABBTest/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/catherine/Research/CollisionDetection/collision_detection_kidney/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -154,19 +154,6 @@ geometry: cmake_check_build_system
 geometry/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/geometry.dir/build.make CMakeFiles/geometry.dir/build
 .PHONY : geometry/fast
-
-#=============================================================================
-# Target rules for targets named loader_example
-
-# Build rule for target.
-loader_example: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 loader_example
-.PHONY : loader_example
-
-# fast build rule for target.
-loader_example/fast:
-	$(MAKE) $(MAKESILENT) -f tinygltf/CMakeFiles/loader_example.dir/build.make tinygltf/CMakeFiles/loader_example.dir/build
-.PHONY : loader_example/fast
 
 boolean_operation.o: boolean_operation.cpp.o
 .PHONY : boolean_operation.o
@@ -288,6 +275,30 @@ geometry/mymesh.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/geometry.dir/build.make CMakeFiles/geometry.dir/geometry/mymesh.cpp.s
 .PHONY : geometry/mymesh.cpp.s
 
+geometry/utils.o: geometry/utils.cpp.o
+.PHONY : geometry/utils.o
+
+# target to build an object file
+geometry/utils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/geometry.dir/build.make CMakeFiles/geometry.dir/geometry/utils.cpp.o
+.PHONY : geometry/utils.cpp.o
+
+geometry/utils.i: geometry/utils.cpp.i
+.PHONY : geometry/utils.i
+
+# target to preprocess a source file
+geometry/utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/geometry.dir/build.make CMakeFiles/geometry.dir/geometry/utils.cpp.i
+.PHONY : geometry/utils.cpp.i
+
+geometry/utils.s: geometry/utils.cpp.s
+.PHONY : geometry/utils.s
+
+# target to generate assembly for a file
+geometry/utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/geometry.dir/build.make CMakeFiles/geometry.dir/geometry/utils.cpp.s
+.PHONY : geometry/utils.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -299,7 +310,6 @@ help:
 	@echo "... boolean_operation"
 	@echo "... collision_detection"
 	@echo "... geometry"
-	@echo "... loader_example"
 	@echo "... boolean_operation.o"
 	@echo "... boolean_operation.i"
 	@echo "... boolean_operation.s"
@@ -315,6 +325,9 @@ help:
 	@echo "... geometry/mymesh.o"
 	@echo "... geometry/mymesh.i"
 	@echo "... geometry/mymesh.s"
+	@echo "... geometry/utils.o"
+	@echo "... geometry/utils.i"
+	@echo "... geometry/utils.s"
 .PHONY : help
 
 

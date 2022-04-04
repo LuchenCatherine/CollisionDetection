@@ -4,7 +4,7 @@
 # compile CXX with /bin/c++
 CXX_DEFINES = -DBOOST_ALL_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK
 
-CXX_INCLUDES = -I/home/catherine/Research/CollisionDetection/AABBTest/geometry
+CXX_INCLUDES = -I/home/catherine/Research/CollisionDetection/collision_detection_kidney/geometry
 
-CXX_FLAGS = -O3 -DNDEBUG -frounding-math
+CXX_FLAGS = -O3 -DNDEBUG -frounding-math -fopenmp
 

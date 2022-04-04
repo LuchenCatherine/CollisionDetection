@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/catherine/Research/CollisionDetection/AABBTest
+CMAKE_SOURCE_DIR = /home/catherine/Research/CollisionDetection/collision_detection_kidney
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/catherine/Research/CollisionDetection/AABBTest/build
+CMAKE_BINARY_DIR = /home/catherine/Research/CollisionDetection/collision_detection_kidney/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/geometry.dir/depend.make
@@ -72,50 +72,65 @@ include CMakeFiles/geometry.dir/flags.make
 CMakeFiles/geometry.dir/geometry/RTree.cpp.o: CMakeFiles/geometry.dir/flags.make
 CMakeFiles/geometry.dir/geometry/RTree.cpp.o: ../geometry/RTree.cpp
 CMakeFiles/geometry.dir/geometry/RTree.cpp.o: CMakeFiles/geometry.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/catherine/Research/CollisionDetection/AABBTest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/geometry.dir/geometry/RTree.cpp.o"
-	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/geometry.dir/geometry/RTree.cpp.o -MF CMakeFiles/geometry.dir/geometry/RTree.cpp.o.d -o CMakeFiles/geometry.dir/geometry/RTree.cpp.o -c /home/catherine/Research/CollisionDetection/AABBTest/geometry/RTree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/catherine/Research/CollisionDetection/collision_detection_kidney/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/geometry.dir/geometry/RTree.cpp.o"
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/geometry.dir/geometry/RTree.cpp.o -MF CMakeFiles/geometry.dir/geometry/RTree.cpp.o.d -o CMakeFiles/geometry.dir/geometry/RTree.cpp.o -c /home/catherine/Research/CollisionDetection/collision_detection_kidney/geometry/RTree.cpp
 
 CMakeFiles/geometry.dir/geometry/RTree.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/geometry.dir/geometry/RTree.cpp.i"
-	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/catherine/Research/CollisionDetection/AABBTest/geometry/RTree.cpp > CMakeFiles/geometry.dir/geometry/RTree.cpp.i
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/catherine/Research/CollisionDetection/collision_detection_kidney/geometry/RTree.cpp > CMakeFiles/geometry.dir/geometry/RTree.cpp.i
 
 CMakeFiles/geometry.dir/geometry/RTree.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/geometry.dir/geometry/RTree.cpp.s"
-	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/catherine/Research/CollisionDetection/AABBTest/geometry/RTree.cpp -o CMakeFiles/geometry.dir/geometry/RTree.cpp.s
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/catherine/Research/CollisionDetection/collision_detection_kidney/geometry/RTree.cpp -o CMakeFiles/geometry.dir/geometry/RTree.cpp.s
 
 CMakeFiles/geometry.dir/geometry/algo.cpp.o: CMakeFiles/geometry.dir/flags.make
 CMakeFiles/geometry.dir/geometry/algo.cpp.o: ../geometry/algo.cpp
 CMakeFiles/geometry.dir/geometry/algo.cpp.o: CMakeFiles/geometry.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/catherine/Research/CollisionDetection/AABBTest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/geometry.dir/geometry/algo.cpp.o"
-	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/geometry.dir/geometry/algo.cpp.o -MF CMakeFiles/geometry.dir/geometry/algo.cpp.o.d -o CMakeFiles/geometry.dir/geometry/algo.cpp.o -c /home/catherine/Research/CollisionDetection/AABBTest/geometry/algo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/catherine/Research/CollisionDetection/collision_detection_kidney/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/geometry.dir/geometry/algo.cpp.o"
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/geometry.dir/geometry/algo.cpp.o -MF CMakeFiles/geometry.dir/geometry/algo.cpp.o.d -o CMakeFiles/geometry.dir/geometry/algo.cpp.o -c /home/catherine/Research/CollisionDetection/collision_detection_kidney/geometry/algo.cpp
 
 CMakeFiles/geometry.dir/geometry/algo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/geometry.dir/geometry/algo.cpp.i"
-	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/catherine/Research/CollisionDetection/AABBTest/geometry/algo.cpp > CMakeFiles/geometry.dir/geometry/algo.cpp.i
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/catherine/Research/CollisionDetection/collision_detection_kidney/geometry/algo.cpp > CMakeFiles/geometry.dir/geometry/algo.cpp.i
 
 CMakeFiles/geometry.dir/geometry/algo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/geometry.dir/geometry/algo.cpp.s"
-	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/catherine/Research/CollisionDetection/AABBTest/geometry/algo.cpp -o CMakeFiles/geometry.dir/geometry/algo.cpp.s
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/catherine/Research/CollisionDetection/collision_detection_kidney/geometry/algo.cpp -o CMakeFiles/geometry.dir/geometry/algo.cpp.s
 
 CMakeFiles/geometry.dir/geometry/mymesh.cpp.o: CMakeFiles/geometry.dir/flags.make
 CMakeFiles/geometry.dir/geometry/mymesh.cpp.o: ../geometry/mymesh.cpp
 CMakeFiles/geometry.dir/geometry/mymesh.cpp.o: CMakeFiles/geometry.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/catherine/Research/CollisionDetection/AABBTest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/geometry.dir/geometry/mymesh.cpp.o"
-	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/geometry.dir/geometry/mymesh.cpp.o -MF CMakeFiles/geometry.dir/geometry/mymesh.cpp.o.d -o CMakeFiles/geometry.dir/geometry/mymesh.cpp.o -c /home/catherine/Research/CollisionDetection/AABBTest/geometry/mymesh.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/catherine/Research/CollisionDetection/collision_detection_kidney/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/geometry.dir/geometry/mymesh.cpp.o"
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/geometry.dir/geometry/mymesh.cpp.o -MF CMakeFiles/geometry.dir/geometry/mymesh.cpp.o.d -o CMakeFiles/geometry.dir/geometry/mymesh.cpp.o -c /home/catherine/Research/CollisionDetection/collision_detection_kidney/geometry/mymesh.cpp
 
 CMakeFiles/geometry.dir/geometry/mymesh.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/geometry.dir/geometry/mymesh.cpp.i"
-	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/catherine/Research/CollisionDetection/AABBTest/geometry/mymesh.cpp > CMakeFiles/geometry.dir/geometry/mymesh.cpp.i
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/catherine/Research/CollisionDetection/collision_detection_kidney/geometry/mymesh.cpp > CMakeFiles/geometry.dir/geometry/mymesh.cpp.i
 
 CMakeFiles/geometry.dir/geometry/mymesh.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/geometry.dir/geometry/mymesh.cpp.s"
-	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/catherine/Research/CollisionDetection/AABBTest/geometry/mymesh.cpp -o CMakeFiles/geometry.dir/geometry/mymesh.cpp.s
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/catherine/Research/CollisionDetection/collision_detection_kidney/geometry/mymesh.cpp -o CMakeFiles/geometry.dir/geometry/mymesh.cpp.s
+
+CMakeFiles/geometry.dir/geometry/utils.cpp.o: CMakeFiles/geometry.dir/flags.make
+CMakeFiles/geometry.dir/geometry/utils.cpp.o: ../geometry/utils.cpp
+CMakeFiles/geometry.dir/geometry/utils.cpp.o: CMakeFiles/geometry.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/catherine/Research/CollisionDetection/collision_detection_kidney/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/geometry.dir/geometry/utils.cpp.o"
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/geometry.dir/geometry/utils.cpp.o -MF CMakeFiles/geometry.dir/geometry/utils.cpp.o.d -o CMakeFiles/geometry.dir/geometry/utils.cpp.o -c /home/catherine/Research/CollisionDetection/collision_detection_kidney/geometry/utils.cpp
+
+CMakeFiles/geometry.dir/geometry/utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/geometry.dir/geometry/utils.cpp.i"
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/catherine/Research/CollisionDetection/collision_detection_kidney/geometry/utils.cpp > CMakeFiles/geometry.dir/geometry/utils.cpp.i
+
+CMakeFiles/geometry.dir/geometry/utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/geometry.dir/geometry/utils.cpp.s"
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/catherine/Research/CollisionDetection/collision_detection_kidney/geometry/utils.cpp -o CMakeFiles/geometry.dir/geometry/utils.cpp.s
 
 # Object files for target geometry
 geometry_OBJECTS = \
 "CMakeFiles/geometry.dir/geometry/RTree.cpp.o" \
 "CMakeFiles/geometry.dir/geometry/algo.cpp.o" \
-"CMakeFiles/geometry.dir/geometry/mymesh.cpp.o"
+"CMakeFiles/geometry.dir/geometry/mymesh.cpp.o" \
+"CMakeFiles/geometry.dir/geometry/utils.cpp.o"
 
 # External object files for target geometry
 geometry_EXTERNAL_OBJECTS =
@@ -123,9 +138,10 @@ geometry_EXTERNAL_OBJECTS =
 libgeometry.a: CMakeFiles/geometry.dir/geometry/RTree.cpp.o
 libgeometry.a: CMakeFiles/geometry.dir/geometry/algo.cpp.o
 libgeometry.a: CMakeFiles/geometry.dir/geometry/mymesh.cpp.o
+libgeometry.a: CMakeFiles/geometry.dir/geometry/utils.cpp.o
 libgeometry.a: CMakeFiles/geometry.dir/build.make
 libgeometry.a: CMakeFiles/geometry.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/catherine/Research/CollisionDetection/AABBTest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libgeometry.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/catherine/Research/CollisionDetection/collision_detection_kidney/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libgeometry.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/geometry.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/geometry.dir/link.txt --verbose=$(VERBOSE)
 
@@ -138,6 +154,6 @@ CMakeFiles/geometry.dir/clean:
 .PHONY : CMakeFiles/geometry.dir/clean
 
 CMakeFiles/geometry.dir/depend:
-	cd /home/catherine/Research/CollisionDetection/AABBTest/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/catherine/Research/CollisionDetection/AABBTest /home/catherine/Research/CollisionDetection/AABBTest /home/catherine/Research/CollisionDetection/AABBTest/build /home/catherine/Research/CollisionDetection/AABBTest/build /home/catherine/Research/CollisionDetection/AABBTest/build/CMakeFiles/geometry.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/catherine/Research/CollisionDetection/collision_detection_kidney/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/catherine/Research/CollisionDetection/collision_detection_kidney /home/catherine/Research/CollisionDetection/collision_detection_kidney /home/catherine/Research/CollisionDetection/collision_detection_kidney/build /home/catherine/Research/CollisionDetection/collision_detection_kidney/build /home/catherine/Research/CollisionDetection/collision_detection_kidney/build/CMakeFiles/geometry.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/geometry.dir/depend
 

@@ -4,7 +4,7 @@
 # compile CXX with /bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/catherine/Research/CollisionDetection/AABBTest/geometry
+CXX_INCLUDES = -I/home/catherine/Research/CollisionDetection/collision_detection_kidney/geometry
 
 CXX_FLAGS = -O3 -DNDEBUG
 

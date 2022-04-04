@@ -1,4 +1,4 @@
-# Install script for directory: /home/catherine/Research/CollisionDetection/AABBTest
+# Install script for directory: /home/catherine/Research/CollisionDetection/collision_detection_kidney
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -42,11 +42,6 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/bin/x86_64-linux-gnu-objdump")
 endif()
 
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/home/catherine/Research/CollisionDetection/AABBTest/build/tinygltf/cmake_install.cmake")
-endif()
-
 if(CMAKE_INSTALL_COMPONENT)
   set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
 else()
@@ -55,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/catherine/Research/CollisionDetection/AABBTest/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/catherine/Research/CollisionDetection/collision_detection_kidney/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

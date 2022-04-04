@@ -4,14 +4,14 @@
 #include <ctime>
 #include "algo.h"
 #include "RTree.h"
-#include "./tinygltf/tiny_gltf.h"
+
 // typedef CGAL::Side_of_triangle_mesh<Surface_mesh, Kernel> Point_inside;
 
 
 int main()
 {
     std::string kidney = "/home/catherine/Research/CollisionDetection/AABBTest/models/kidney/";
-    std::string tissue_off_path = "/home/catherine/Research/CollisionDetection/AABBTest/models/tissue/tissue.off";
+    std::string tissue_off_path = "/home/catherine/Research/CollisionDetection/AABBTest/models/tissue/tissue2.off";
     std::vector<std::string> parts = {"2", "4", "5", "7", "8", "9", "10", "11", "13"};
     // std::vector<std::string> parts = {"5"};
 
@@ -58,14 +58,15 @@ int main()
 
     int size, AS;
     size = aabbtrees.size(); 
-    AS = 1000000;
+    AS = 9;
     
+
     
-    
-    rtree_aabb(meshes, aabbtrees, parts, tissue, tissue_tree, size, AS);
-    only_aabb(aabbtrees, parts, tissue_tree, size, AS);
+    brute_force(faces_mesh, parts, tissue_faces, size, AS);
     openmp_aabb(aabbtrees, parts, tissue_tree, size, AS);
-    // brute_force(faces_mesh, parts, tissue_faces, size, AS);
+    // rtree_aabb(meshes, aabbtrees, parts, tissue, tissue_tree, size, AS);
+    // only_aabb(aabbtrees, parts, tissue_tree, size, AS);
+    // openmp_aabb(aabbtrees, parts, tissue_tree, size, AS);
 
 
 

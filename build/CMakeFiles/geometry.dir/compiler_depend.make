@@ -6100,6 +6100,9 @@ CMakeFiles/geometry.dir/geometry/mymesh.cpp.o: ../geometry/mymesh.cpp \
   /usr/include/CGAL/Polygon_mesh_processing/smooth_shape.h \
   /usr/include/CGAL/Polygon_mesh_processing/internal/Smoothing/curvature_flow_impl.h
 
+CMakeFiles/geometry.dir/geometry/utils.cpp.o: ../geometry/utils.cpp \
+  /usr/include/stdc-predef.h
+
 
 /usr/include/CGAL/Polygon_mesh_processing/internal/Smoothing/curvature_flow_impl.h:
 
@@ -7254,6 +7257,8 @@ CMakeFiles/geometry.dir/geometry/mymesh.cpp.o: ../geometry/mymesh.cpp \
 /usr/include/boost/preprocessor/seq/for_each_product.hpp:
 
 /usr/include/boost/mpl/list/aux_/preprocessed/plain/list20.hpp:
+
+../geometry/utils.cpp:
 
 /usr/include/boost/type_traits/detail/yes_no_type.hpp:
 

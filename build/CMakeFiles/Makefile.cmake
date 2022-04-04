@@ -11,7 +11,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.20.0/CMakeCCompiler.cmake"
   "CMakeFiles/3.20.0/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.20.0/CMakeSystem.cmake"
-  "../tinygltf/CMakeLists.txt"
   "/usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfigVersion.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/BoostDetectToolset-1.71.0.cmake"
@@ -74,7 +73,6 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "tinygltf/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -82,5 +80,4 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/boolean_operation.dir/DependInfo.cmake"
   "CMakeFiles/collision_detection.dir/DependInfo.cmake"
   "CMakeFiles/geometry.dir/DependInfo.cmake"
-  "tinygltf/CMakeFiles/loader_example.dir/DependInfo.cmake"
   )

@@ -8,9 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/catherine/Research/CollisionDetection/AABBTest/geometry/RTree.cpp" "CMakeFiles/geometry.dir/geometry/RTree.cpp.o" "gcc" "CMakeFiles/geometry.dir/geometry/RTree.cpp.o.d"
-  "/home/catherine/Research/CollisionDetection/AABBTest/geometry/algo.cpp" "CMakeFiles/geometry.dir/geometry/algo.cpp.o" "gcc" "CMakeFiles/geometry.dir/geometry/algo.cpp.o.d"
-  "/home/catherine/Research/CollisionDetection/AABBTest/geometry/mymesh.cpp" "CMakeFiles/geometry.dir/geometry/mymesh.cpp.o" "gcc" "CMakeFiles/geometry.dir/geometry/mymesh.cpp.o.d"
+  "/home/catherine/Research/CollisionDetection/collision_detection_kidney/geometry/RTree.cpp" "CMakeFiles/geometry.dir/geometry/RTree.cpp.o" "gcc" "CMakeFiles/geometry.dir/geometry/RTree.cpp.o.d"
+  "/home/catherine/Research/CollisionDetection/collision_detection_kidney/geometry/algo.cpp" "CMakeFiles/geometry.dir/geometry/algo.cpp.o" "gcc" "CMakeFiles/geometry.dir/geometry/algo.cpp.o.d"
+  "/home/catherine/Research/CollisionDetection/collision_detection_kidney/geometry/mymesh.cpp" "CMakeFiles/geometry.dir/geometry/mymesh.cpp.o" "gcc" "CMakeFiles/geometry.dir/geometry/mymesh.cpp.o.d"
+  "/home/catherine/Research/CollisionDetection/collision_detection_kidney/geometry/utils.cpp" "CMakeFiles/geometry.dir/geometry/utils.cpp.o" "gcc" "CMakeFiles/geometry.dir/geometry/utils.cpp.o.d"
   )
 
 # Targets to which this target links.

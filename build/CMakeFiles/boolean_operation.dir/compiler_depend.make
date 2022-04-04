@@ -515,6 +515,7 @@ CMakeFiles/boolean_operation.dir/boolean_operation.cpp.o: ../boolean_operation.c
   /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h \
   /usr/include/c++/9/bits/fstream.tcc \
+  ../geometry/algo.h \
   ../geometry/mymesh.h \
   /usr/include/CGAL/Simple_cartesian.h \
   /usr/include/CGAL/Cartesian/Cartesian_base.h \
@@ -2975,8 +2976,12 @@ CMakeFiles/boolean_operation.dir/boolean_operation.cpp.o: ../boolean_operation.c
   /usr/include/CGAL/Polygon_mesh_processing/internal/Smoothing/mesh_smoothing_impl.h \
   /usr/include/CGAL/Polygon_mesh_processing/internal/Smoothing/smoothing_evaluation.h \
   /usr/include/CGAL/Polygon_mesh_processing/smooth_shape.h \
-  /usr/include/CGAL/Polygon_mesh_processing/internal/Smoothing/curvature_flow_impl.h
+  /usr/include/CGAL/Polygon_mesh_processing/internal/Smoothing/curvature_flow_impl.h \
+  ../geometry/RTree.h \
+  ../geometry/mymesh.h
 
+
+../geometry/RTree.h:
 
 /usr/include/CGAL/Polygon_mesh_processing/internal/Smoothing/curvature_flow_impl.h:
 
@@ -3778,9 +3783,9 @@ CMakeFiles/boolean_operation.dir/boolean_operation.cpp.o: ../boolean_operation.c
 
 /usr/include/boost/mp11/set.hpp:
 
-/usr/include/boost/detail/call_traits.hpp:
+/usr/include/boost/bimap/detail/non_unique_views_helper.hpp:
 
-/usr/include/boost/range/detail/safe_bool.hpp:
+/usr/include/boost/mp11/algorithm.hpp:
 
 /usr/include/boost/variant/detail/config.hpp:
 
@@ -4261,6 +4266,10 @@ CMakeFiles/boolean_operation.dir/boolean_operation.cpp.o: ../boolean_operation.c
 /usr/include/boost/type_traits/is_convertible.hpp:
 
 /usr/include/boost/type_traits/has_divides.hpp:
+
+/usr/include/boost/range/detail/safe_bool.hpp:
+
+/usr/include/boost/detail/call_traits.hpp:
 
 /usr/include/boost/math/special_functions/detail/lanczos_sse2.hpp:
 
@@ -4772,6 +4781,12 @@ CMakeFiles/boolean_operation.dir/boolean_operation.cpp.o: ../boolean_operation.c
 
 /usr/include/boost/predef/architecture/ia64.h:
 
+/usr/include/boost/predef/architecture/convex.h:
+
+/usr/include/CGAL/Polygon_mesh_processing/internal/Corefinement/intersection_impl.h:
+
+/usr/include/boost/fusion/iterator/next.hpp:
+
 /usr/include/CGAL/Triangulation_ds_face_base_2.h:
 
 /usr/include/c++/9/bits/allocated_ptr.h:
@@ -5068,6 +5083,10 @@ CMakeFiles/boolean_operation.dir/boolean_operation.cpp.o: ../boolean_operation.c
 
 /usr/include/boost/fusion/iterator/distance.hpp:
 
+/usr/include/c++/9/limits:
+
+/usr/include/boost/static_assert.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/environments.h:
 
 /usr/include/c++/9/system_error:
@@ -5263,14 +5282,6 @@ CMakeFiles/boolean_operation.dir/boolean_operation.cpp.o: ../boolean_operation.c
 /usr/include/c++/9/bits/stl_heap.h:
 
 /usr/include/c++/9/bits/streambuf.tcc:
-
-/usr/include/boost/predef/hardware/simd/x86_amd/versions.h:
-
-/usr/include/boost/predef/compiler/metrowerks.h:
-
-/usr/include/boost/concept/detail/general.hpp:
-
-/usr/include/CGAL/Simple_cartesian.h:
 
 /usr/include/c++/9/typeinfo:
 
@@ -5926,19 +5937,19 @@ CMakeFiles/boolean_operation.dir/boolean_operation.cpp.o: ../boolean_operation.c
 
 /usr/include/c++/9/bits/std_function.h:
 
+/usr/include/boost/predef/hardware/simd/x86_amd/versions.h:
+
+/usr/include/boost/predef/compiler/metrowerks.h:
+
+/usr/include/boost/concept/detail/general.hpp:
+
+/usr/include/CGAL/Simple_cartesian.h:
+
+../geometry/algo.h:
+
 /usr/include/boost/preprocessor/list/first_n.hpp:
 
 /usr/include/boost/range/mutable_iterator.hpp:
-
-/usr/include/boost/static_assert.hpp:
-
-/usr/include/c++/9/limits:
-
-/usr/include/boost/predef/architecture/convex.h:
-
-/usr/include/CGAL/Polygon_mesh_processing/internal/Corefinement/intersection_impl.h:
-
-/usr/include/boost/fusion/iterator/next.hpp:
 
 /usr/include/boost/mpl/aux_/config/msvc.hpp:
 
@@ -8923,7 +8934,3 @@ CMakeFiles/boolean_operation.dir/boolean_operation.cpp.o: ../boolean_operation.c
 /usr/include/boost/parameter/aux_/tagged_argument_fwd.hpp:
 
 /usr/include/boost/parameter/aux_/lambda_tag.hpp:
-
-/usr/include/boost/bimap/detail/non_unique_views_helper.hpp:
-
-/usr/include/boost/mp11/algorithm.hpp:

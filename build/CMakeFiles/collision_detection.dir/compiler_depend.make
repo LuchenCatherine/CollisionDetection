@@ -2956,11 +2956,8 @@ CMakeFiles/collision_detection.dir/collision_detection_kidney.cpp.o: ../collisio
   ../geometry/algo.h \
   ../geometry/mymesh.h \
   ../geometry/RTree.h \
-  ../geometry/RTree.h \
-  ../tinygltf/tiny_gltf.h
+  ../geometry/RTree.h
 
-
-../tinygltf/tiny_gltf.h:
 
 ../geometry/RTree.h:
 

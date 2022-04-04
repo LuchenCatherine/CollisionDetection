@@ -28,7 +28,6 @@ target_link_libraries(boolean_operation geometry)
 
 set(TINYGLTF_HEADER_ONLY ON CACHE INTERNAL "" FORCE)
 set(TINYGLTF_INSTALL OFF CACHE INTERNAL "" FORCE)
-add_subdirectory(tinygltf)
 
 # if ( CGAL_FOUND )
 
@@ -53,6 +52,7 @@ endif()
 find_package(OpenMP)
 if(OpenMP_CXX_FOUND)
     target_link_libraries(collision_detection OpenMP::OpenMP_CXX)
+    target_link_libraries(boolean_operation OpenMP::OpenMP_CXX)
 endif()
 
 

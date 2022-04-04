@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/catherine/Research/CollisionDetection/AABBTest/collision_detection_kidney.cpp" "CMakeFiles/collision_detection.dir/collision_detection_kidney.cpp.o" "gcc" "CMakeFiles/collision_detection.dir/collision_detection_kidney.cpp.o.d"
+  "/home/catherine/Research/CollisionDetection/collision_detection_kidney/collision_detection_kidney.cpp" "CMakeFiles/collision_detection.dir/collision_detection_kidney.cpp.o" "gcc" "CMakeFiles/collision_detection.dir/collision_detection_kidney.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/catherine/Research/CollisionDetection/AABBTest/build/CMakeFiles/geometry.dir/DependInfo.cmake"
+  "/home/catherine/Research/CollisionDetection/collision_detection_kidney/build/CMakeFiles/geometry.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
