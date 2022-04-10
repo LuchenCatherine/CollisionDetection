@@ -1,5 +1,0 @@
-/home/catherine/Research/CollisionDetection/collision_detection_kidney/build/CMakeFiles/edit_cache.dir
-/home/catherine/Research/CollisionDetection/collision_detection_kidney/build/CMakeFiles/rebuild_cache.dir
-/home/catherine/Research/CollisionDetection/collision_detection_kidney/build/CMakeFiles/boolean_operation.dir
-/home/catherine/Research/CollisionDetection/collision_detection_kidney/build/CMakeFiles/collision_detection.dir
-/home/catherine/Research/CollisionDetection/collision_detection_kidney/build/CMakeFiles/geometry.dir

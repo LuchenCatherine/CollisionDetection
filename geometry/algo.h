@@ -10,6 +10,12 @@
 typedef RTree<int, double, 3, double> rtree_3;
 typedef int ValueType;
 
+std::vector<int> collision_detection(std::vector<Tree*>& organ_aabbtrees, std::vector<Tree*>& tissue_aabbtrees);
+
+std::vector<int> collision_detection_2(std::vector<Tree*>& organ_aabbtrees, std::vector<Tree*>& tissue_aabbtrees);
+
+std::vector<int> collision_detection_3(std::vector<std::vector<Triangle>>& organ_faces, std::vector<std::vector<Triangle>>& tissue_faces);
+
 bool MySearchCallback(ValueType id);
 
 void rtree_aabb(std::vector<Mymesh> meshes, std::vector<Tree*>& aabbtrees, std::vector<std::string>& parts, Mymesh tissue, Tree* tissue_tree, int size, int AS);

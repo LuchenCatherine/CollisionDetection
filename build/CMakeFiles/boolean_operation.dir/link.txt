@@ -1,1 +1,0 @@
-/bin/c++ -O3 -DNDEBUG CMakeFiles/boolean_operation.dir/boolean_operation.cpp.o -o bin/boolean_operation  -Wl,-rpath,/usr/lib/gcc/x86_64-linux-gnu/8 libgeometry.a /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0 /usr/lib/x86_64-linux-gnu/libmpfr.so /usr/lib/x86_64-linux-gnu/libgmp.so /usr/lib/gcc/x86_64-linux-gnu/8/libgomp.so /usr/lib/x86_64-linux-gnu/libpthread.so 

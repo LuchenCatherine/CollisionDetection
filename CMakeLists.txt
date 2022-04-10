@@ -3,8 +3,8 @@
 
 
 cmake_minimum_required(VERSION 3.1...3.15)
-
-project( AABB_Test )
+ 
+project( COLLISION_DETECTION_KIDNEY )
 
 
 find_package(CGAL REQUIRED)

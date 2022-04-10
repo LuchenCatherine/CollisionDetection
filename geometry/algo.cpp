@@ -1,4 +1,93 @@
 #include "algo.h"
+
+std::vector<int> collision_detection(std::vector<Tree*>& organ_aabbtrees, std::vector<Tree*>& tissue_aabbtrees)
+{
+    std::vector<int> collision_parts_parallel;
+    auto t1 = std::chrono::high_resolution_clock::now();
+    #pragma omp parallel
+    {
+        std::vector<int> collision_parts_private;
+        #pragma omp for nowait  
+        for (int i = 0; i < organ_aabbtrees.size(); ++i)
+        {
+            Tree* tree = organ_aabbtrees[i];
+            for (int j = 0; j < tissue_aabbtrees.size(); ++j)
+            {
+                if (tree->do_intersect(*tissue_aabbtrees[j]))
+                {
+                // std::cout << "kidney_part_" << parts[i] << " collides with tissue, running time is "<< 1.0* (clock() - tmp_start)/CLOCKS_PER_SEC << '\n';
+                collision_parts_private.push_back(i); 
+                }
+
+            }
+
+        }
+
+        #pragma omp critical
+        collision_parts_parallel.insert(collision_parts_parallel.end(), collision_parts_private.begin(), collision_parts_private.end());
+    }
+    auto t2 = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double> duration2 = t2 - t1;
+    std::cout << "parallel running time is " << duration2.count() << " seconds" << std::endl;  
+    return collision_parts_parallel;
+
+}
+
+std::vector<int> collision_detection_2(std::vector<Tree*>& organ_aabbtrees, std::vector<Tree*>& tissue_aabbtrees)
+{
+    std::vector<int> collision_parts;
+    auto t1 = std::chrono::high_resolution_clock::now();
+
+    {
+
+        for (int i = 0; i < organ_aabbtrees.size(); ++i)
+        {
+            Tree* tree = organ_aabbtrees[i];
+            for (int j = 0; j < tissue_aabbtrees.size(); ++j)
+            {
+                if (tree->do_intersect(*tissue_aabbtrees[j]))
+                {
+                // std::cout << "kidney_part_" << parts[i] << " collides with tissue, running time is "<< 1.0* (clock() - tmp_start)/CLOCKS_PER_SEC << '\n';
+                collision_parts.push_back(i); 
+                }
+
+            }
+
+        }
+
+    }
+    auto t2 = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double> duration2 = t2 - t1;
+    std::cout << "non parallel running time is " << duration2.count() << " seconds" << std::endl;  
+    return collision_parts;
+
+}
+
+std::vector<int> collision_detection_3(std::vector<std::vector<Triangle>>& organ_faces, std::vector<std::vector<Triangle>>& tissue_faces)
+{
+    std::vector<int> collision_parts_bf;
+    auto t1 = std::chrono::high_resolution_clock::now();
+
+    
+    for (int i = 0; i < organ_faces.size(); ++i)
+    {
+        for (int j = 0; j < tissue_faces.size(); ++j)
+        {
+            if (intersection_brute_force(organ_faces[i], tissue_faces[j]))
+            {
+                collision_parts_bf.push_back(i);
+            }
+        }
+    }
+
+    auto t2 = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double> duration2 = t2 - t1;
+    std::cout << "brute force running time is " << duration2.count() << " seconds" << std::endl;  
+    return collision_parts_bf;
+
+}
+
+
 bool MySearchCallback(ValueType id)
 {
 //   std::cout << "Hit data rect " << id << "\n";
